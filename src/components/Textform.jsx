@@ -53,9 +53,9 @@ export default function Textform(props) {
     <textarea className= {`form-control bg-${props.mode}`} style={{color:props.mode==='light'?'black':'white'}} value={text} onChange={handleonchange} id="mybox" rows="5" placeholder='enter your text here'></textarea>
     </div>
     
-    <button className="btn btn-primary mx-3" onClick={handleupclick}>Convert to Uppercase</button>
-        <button className="btn btn-primary mx-3" onClick={handleloclick}>Convert to lowercase</button>
-            <button className="btn btn-primary mx-3" onClick={handleclearclick}>Clear Text</button>
+    <button className="btn btn-primary mx-3 my-3" onClick={handleupclick}>Convert to Uppercase</button>
+        <button className="btn btn-primary mx-3 my-3" onClick={handleloclick}>Convert to lowercase</button>
+            <button className="btn btn-primary mx-3 my-3" onClick={handleclearclick}>Clear Text</button>
     </div>
 
 
