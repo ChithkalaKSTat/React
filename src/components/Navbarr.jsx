@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 export default function Navbarr(props) {
     
   return (
-     <nav className={`navbar navbar-expand-lg  navbar-${props.mode} bg-${props.mode} `}>
      <nav className={`navbar navbar-expand-lg  navbar-${props.mode} bg-${props.mode}`}>
   <div className="container-fluid">
     <a className="navbar-brand" href="#">{props.title}</a>
