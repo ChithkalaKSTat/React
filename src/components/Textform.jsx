@@ -1,3 +1,4 @@
+import { element } from 'prop-types'
 import React from 'react'
 import { useState } from 'react' 
 
@@ -60,7 +61,9 @@ export default function Textform(props) {
 
 <div className="container">
     <h2>Your text Summary</h2>
-    <p>{text.split(' ').length} words  {text.length} characters </p>
+    <p>{text.split(' ').filter((val) => {
+        return val.length!==0;
+    }).length} words  {text.length} characters </p>
     <p>{0.008 * text.split(' ').length}minutes read</p>
     <h3>Preview</h3>
     <p>{text}</p>
