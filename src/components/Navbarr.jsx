@@ -19,9 +19,8 @@ export default function Navbarr(props) {
         <li className="nav-item">
           <a className="nav-link"  href ="/">{props.abouttext}</a>
         </li>
-
-       
       </ul>
+      
      <input type="radio" className="btn-check" onClick={props.togglemode} name="options-base" id="option5" autoComplete="off"  />
     <label className="btn" htmlFor="option5">white</label> 
 
