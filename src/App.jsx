@@ -2,10 +2,11 @@ import { useState, useSyncExternalStore } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Routes, Route } from 'react-router-dom'
 
 import Textform from './components/Textform'
 
-// import About from './components/About'
+import About from './components/About'
 
 import Navbarr from './components/Navbarr'
 import Alert from './components/Alert'
@@ -62,18 +63,18 @@ setalert(null)
     <>
    {/* <Router> */}
   <Navbarr title='Textutils' abouttext='about us'  mode={mode} togglemode={togglemode} />
+  
   <Alert alert={alert} />
+  
   <div className="container">
-    {/* <Routes>
-      <Route path="/about" element={<About />} /> */}
+    <Routes>
+      <Route path="/about" element={<About mode={mode}/>} /> 
       
-    
-        <Textform heading="Enter the text to analyze" mode={mode} /> 
-
-    {/* </Routes> */}
+      <Route path='/' element={<Textform heading="Enter the text to analyze" mode={mode} />}/>
+    </Routes>
+        {/* <Textform heading="Enter the text to analyze" mode={mode} />  */}
   </div>
-{/* </Router> */}
- {/* <About />                                                      */}
+{/* </Router> */}                                                 
 
 </>
 
